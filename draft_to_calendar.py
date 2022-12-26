@@ -4,7 +4,7 @@ import json
 from bs4 import BeautifulSoup
 import re
 import socket
-import socks
+
 from aiohttp_socks import ProxyConnector
 from python_socks import ProxyType
 from datetime import date
