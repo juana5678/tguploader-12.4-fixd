@@ -1,5 +1,5 @@
 requests
-requests[socks] 
+
 python-telegram-bot 
 bs4 
 user_agent 
@@ -15,5 +15,4 @@ pyrogram
 tgcrypto
 aiohttp
 yarl
-aiohttp_socks==0.7.1
-aiohttp-socks
+
