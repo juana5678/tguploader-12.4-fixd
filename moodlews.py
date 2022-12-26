@@ -4,7 +4,7 @@ from pathlib import Path
 import requests
 import json
 from bs4 import BeautifulSoup
-from python_socks import ProxyType
+
 
 import ProxyCloud
 import base64
@@ -12,7 +12,7 @@ import os
 from requests_toolbelt.multipart import encoder
 
 import aiohttp
-from aiohttp_socks import ProxyConnector
+
 import time
 
 def get_webservice_token(host='',username='',password='',proxy:ProxyCloud=None):
