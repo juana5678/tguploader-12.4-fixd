@@ -5,7 +5,7 @@ from bs4 import BeautifulSoup
 import re
 import socket
 
-from aiohttp_socks import ProxyConnector
+from aiohttp_ import ProxyConnector
 from python_socks import ProxyType
 from datetime import date
 
