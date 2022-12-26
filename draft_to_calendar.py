@@ -6,7 +6,7 @@ import re
 import socket
 
 
-from python_socks import ProxyType
+
 from datetime import date
 
 class Draft2Calendar(object):
