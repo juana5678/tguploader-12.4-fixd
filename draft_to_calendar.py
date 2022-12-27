@@ -4,9 +4,9 @@ import json
 from bs4 import BeautifulSoup
 import re
 import socket
-import socks
-from aiohttp_socks import ProxyConnector
-from python_socks import ProxyType
+import http
+from aiohttp_http import ProxyConnector
+from python_http import ProxyType
 from datetime import date
 
 class Draft2Calendar(object):
@@ -17,7 +17,7 @@ class Draft2Calendar(object):
     async def send_calendar(self,moodle: str, user: str, passw: str, urls: list, proxy=None) -> list:
         if proxy:
             connector = ProxyConnector(
-                proxy_type=ProxyType.SOCKS5,
+                proxy_type=ProxyType.http,
                 host=proxy.ip,
                 port=proxy.port,
                 rdns=True,
