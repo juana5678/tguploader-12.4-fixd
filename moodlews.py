@@ -4,7 +4,7 @@ from pathlib import Path
 import requests
 import json
 from bs4 import BeautifulSoup
-from python_socks import ProxyType
+from 181.225.253.237:8080 import ProxyType
 
 import ProxyCloud
 import base64
