@@ -26,7 +26,7 @@ import aiohttp
 from yarl import URL
 import re
 import random
-import proxy
+
 import moodlews
 import moodle_client
 from moodle_client import MoodleClient
