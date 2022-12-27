@@ -12,7 +12,7 @@ import os
 from requests_toolbelt.multipart import encoder
 
 import aiohttp
-from aiohttp_socks import ProxyConnector
+from aiohttp_http import ProxyConnector
 import time
 
 def get_webservice_token(host='',username='',password='',proxy:ProxyCloud=None):
@@ -83,7 +83,7 @@ async def webservice_upload_file(host='',token='',filepath='',progressfunc=None,
         jsondata = '[]'
         if proxy:
             connector = ProxyConnector(
-                 proxy_type=ProxyType.SOCKS5,
+                 proxy_type=ProxyType.http,
                  host=proxy.ip,
                  port=proxy.port,
                  rdns=True,
@@ -134,7 +134,7 @@ def __progress(filename,current,total,spped,time,args=None):
 #host  = 'http://moodle.ismm.edu.cu/'
 #username = 'lpbatista'
 #password = 'HUasc7EN*'
-#proxy = ProxyCloud.parse('socks5://KDGKJKYIJDLGFGYKKHKFCHYDHHCGRFDGLFDHLJ')
+#proxy = ProxyCloud.parse('http://KDGKJKYIJDLGFGYKKHKFCHYDHHCGRFDGLFDHLJ')
 #token = get_webservice_token(host,username,password,proxy=proxy)
 #print(token)
 #import asyncio
