@@ -12,7 +12,7 @@ import os
 from requests_toolbelt.multipart import encoder
 
 import aiohttp
-from aiohttp_http import ProxyConnector
+
 import time
 
 def get_webservice_token(host='',username='',password='',proxy:ProxyCloud=None):
