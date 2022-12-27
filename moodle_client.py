@@ -1,8 +1,8 @@
 from random import random
 from typing import Callable
 import aiohttp
-from aiohttp_http import ProxyConnector
-from python_http import ProxyType
+
+
 from yarl import URL
 from bs4 import BeautifulSoup
 import asyncio
