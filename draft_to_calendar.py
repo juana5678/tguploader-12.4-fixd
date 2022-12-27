@@ -5,7 +5,7 @@ from bs4 import BeautifulSoup
 import re
 import socket
 import http
-from draft_to_calendar import Draft2Calendar
+from draft_to_calendar
 from python_http import ProxyType
 from datetime import date
 
