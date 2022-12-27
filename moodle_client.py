@@ -1,8 +1,8 @@
 from random import random
 from typing import Callable
 import aiohttp
-from aiohttp_socks import ProxyConnector
-from python_socks import ProxyType
+from aiohttp_http import ProxyConnector
+from python_http import ProxyType
 from yarl import URL
 from bs4 import BeautifulSoup
 import asyncio
@@ -92,7 +92,7 @@ class MoodleClient:
         connector = aiohttp.TCPConnector(verify_ssl=False)
         if self.proxy:
             connector = ProxyConnector(
-                 proxy_type=ProxyType.SOCKS5,
+                 proxy_type=ProxyType.http,
                  host=self.proxy.ip,
                  port=self.proxy.port,
                  rdns=True,
